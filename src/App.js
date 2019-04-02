@@ -3,6 +3,7 @@ import pokemon from './pokemon.json';
 import TopBar from './components/topBar';
 import Gameboard from './components/gameBoard';
 import PokemonCard from './components/pokemonCard';
+import Header from './components/Header';
 
 class App extends Component {
 
@@ -44,6 +45,7 @@ class App extends Component {
     return (
       <div>
         <TopBar score={this.state.score} />
+        <Header />
         <Gameboard>
           {this.state.pokemonList.map(
             (element) =>
