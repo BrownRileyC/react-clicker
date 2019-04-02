@@ -1,26 +1,43 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import pokemon from '../pokemon.json';
+import TopBar from './components/topBar';
+import Gameboard from './components/gameBoard';
+import PokemonCard from './components/pokemonCard';
 
 class App extends Component {
+
+  state = {
+    pokemonList: pokemon,
+    score: 0,
+    unclickedList: pokemon
+  };
+
+  gameReset = () => this.setState({unclickedList: pokemon, score: 0});
+
+  checkOnClick = (id) => {
+    const reducedUnclickedList = this.state.unclickedList.filter((element) => element.id !== id);
+
+    if (this.state.unclickedList.length !== reducedUnclickedList.length) {
+      this.setState({unclickedList: reducedUnclickedList, score: this.state.score +1});
+    } else {
+      this.gameReset();
+    }
+    
+  }
+
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
+      <TopBar />
+      <Gameboard>
+        {this.state.pokemonList.map(
+          (element) =>
+          <PokemonCard
+          key={element.id}
+          {...element}
+          checkClicked={this.checkOnClick}
+          reset={this.gameReset}/>
+        )}
+      </Gameboard>
     );
   }
 }
