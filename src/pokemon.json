@@ -2,61 +2,61 @@
     {
         "id": 1,
         "name": "Bulbasaur",
-        "image": "/assets/images/Bulbasaur.png"
+        "image": "%PUBLIC_URL%/assets/images/Bulbasaur.png"
     },
     {
         "id": 2,
         "name": "Cyndaquil",
-        "image": "/assets/images/Cyndaquil.png"
+        "image": "%PUBLIC_URL%/assets/images/Cyndaquil.png"
     },
     {
         "id": 3,
         "name": "Eevee",
-        "image": "/assets/images/Eevee.png"
+        "image": "%PUBLIC_URL%/assets/images/Eevee.png"
     },
     {
         "id": 4,
         "name": "Fennekin",
-        "image": "/assets/images/Fennekin.png"
+        "image": "%PUBLIC_URL%/assets/images/Fennekin.png"
     },
     {
         "id": 5,
         "name": "Mudkip",
-        "image": "/assets/images/Mudkip.png"
+        "image": "%PUBLIC_URL%/assets/images/Mudkip.png"
     },
     {
         "id": 6,
         "name": "Piplup",
-        "image": "/assets/images/Piplup.png"
+        "image": "%PUBLIC_URL%/assets/images/Piplup.png"
     },
     {
         "id": 7,
         "name": "Popplio",
-        "image": "/assets/images/Popplio.png"
+        "image": "%PUBLIC_URL%/assets/images/Popplio.png"
     },
     {
         "id": 8,
         "name": "Rowlet",
-        "image": "/assets/images/Rowlet.png"
+        "image": "%PUBLIC_URL%/assets/images/Rowlet.png"
     },
     {
         "id": 9,
         "name": "Sobble",
-        "image": "/assets/images/Sobble.png"
+        "image": "%PUBLIC_URL%/assets/images/Sobble.png"
     },
     {
         "id": 10,
         "name": "Tepig",
-        "image": "/assets/images/Tepig.png"
+        "image": "%PUBLIC_URL%/assets/images/Tepig.png"
     },
     {
         "id": 11,
         "name": "Totodile",
-        "image": "/assets/images/Totodile.png"
+        "image": "%PUBLIC_URL%/assets/images/Totodile.png"
     },
     {
         "id": 12,
         "name": "Turtwig",
-        "image": "/assets/images/Turtwig.png"
+        "image": "%PUBLIC_URL%/assets/images/Turtwig.png"
     }
 ]
